@@ -3,7 +3,7 @@ import logo from '../assets/logo.jpg'
 
 const Navbar = () => {
   return (
-    <nav className="navbar sticky-top navbar-expand-lg navbar-dark" style={{backgroundColor: "#802000"}}>
+    <nav className="navbar sticky-top navbar-expand-lg navbar-dark" style={{backgroundColor: "#000000"}}>
       <div className="container">
         <a className="navbar-brand" href="#">
           <img src={logo} alt="Logo" width="30" className="d-inline-block align-top me-2" />

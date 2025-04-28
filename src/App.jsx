@@ -7,6 +7,9 @@ import BigCard from './Components/BigCard.jsx'
 import Card from './Components/Card.jsx'
 import Gallery from './Components/Gallery.jsx'
 
+import decoracion_i from './assets/decoraciones/DecoracionIzquierda.png'
+import decoracion_d from './assets/decoraciones/DecoracionDerecha.png'
+
 function App() {
  
 
@@ -18,13 +21,27 @@ function App() {
         <Hero/>
         
         <section className="section">
-          <div className="container">
-            <h2 className="section-title">Nuestro Museo</h2>
-            <Card 
-              title="Experiencia Cultural Única" 
-              description="Descubre la magia de los títeres tradicionales en un espacio diseñado para preservar y compartir este arte milenario."
-              buttonText="Conoce más"
-            />
+          <div className="row">
+            
+            <div className="row align-items-center">
+              <div className="">
+                <img src={decoracion_i} alt="decoracion" style={{width: "10%"}} />
+              </div>
+              <div className="">
+                <h2 className="section-title">Nuestro Museo</h2>
+              </div>
+              <div className="">
+                <img src={decoracion_d} alt="decoracion"  style={{width: "10%"}} />
+              </div>
+            </div>
+            
+              
+          <Card 
+            title="Experiencia Cultural Única" 
+            description="Descubre la magia de los títeres tradicionales en un espacio diseñado para preservar y compartir este arte milenario."
+            buttonText="Conoce más"
+          />
+          
           </div>
         </section>
         
@@ -60,7 +77,7 @@ function App() {
         
         {/* Sección Visitas */}
         <section className="py-0 bg-light border border-2 mb-5 ms-5 me-5">
-          <div className="container mx-0 px-0 mw-100" style={{height: "20em"}}>
+          <div className="container mx-0 px-0 mw-100" style={{height: "25em"}}>
             <BigCard />
           </div>
         </section>
