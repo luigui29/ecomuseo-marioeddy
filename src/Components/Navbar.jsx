@@ -1,11 +1,12 @@
 import React from 'react'
+import logo from '../assets/logo.jpg'
 
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav className="navbar sticky-top navbar-expand-lg navbar-dark" style={{backgroundColor: "#802000"}}>
       <div className="container">
         <a className="navbar-brand" href="#">
-          <img src="../assets/logo.png" alt="Logo" width="30" className="d-inline-block align-top me-2" />
+          <img src={logo} alt="Logo" width="30" className="d-inline-block align-top me-2" />
           Ecomuseo Marioeddy
         </a>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">

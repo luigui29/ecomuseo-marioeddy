@@ -1,5 +1,7 @@
 import React from 'react'
 import imagenPrincipal from '../assets/img-principal.jpeg';
+import imagenAfuera from '../assets/ecomuseo-carousel-2.jpg';
+import imagenTaller from '../assets/ecomuseo-carousel-3.jpg';
 import './Hero.css';
 
 const Hero = () => {
@@ -15,7 +17,7 @@ const Hero = () => {
       <div className="carousel-inner">
         <div className="carousel-item active" data-bs-interval="5000">
           <div className="hero-container">
-            <img src={imagenPrincipal} alt="Entrada del Ecomuseo" className="hero-image" />
+            <img src={imagenAfuera} alt="Entrada del Ecomuseo" className="hero-image" />
           </div>
           <div className="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
             <h2 className="text-white">Ecomuseo de Títeres Marioeddy</h2>
@@ -29,17 +31,17 @@ const Hero = () => {
           </div>
           <div className="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
             <h2 className="text-white">Nuestra Colección</h2>
-            <p className="text-white">Descubre títeres tradicionales de todo el mundo</p>
+            <p className="text-white">Descubre títeres tradicionales de Venezuela y Latinoamérica</p>
           </div>
         </div>
         
         <div className="carousel-item">
           <div className="hero-container">
-            <img src={imagenPrincipal} alt="Taller de títeres" className="hero-image" />
+            <img src={imagenTaller} alt="Taller de títeres" className="hero-image" />
           </div>
           <div className="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
             <h2 className="text-white">Talleres Educativos</h2>
-            <p className="text-white">Aprende el arte de la titiritería con nuestros maestros</p>
+            <p className="text-white">Aprende sobre el arte y el mundo con nuestros maestros</p>
           </div>
         </div>
       </div>
@@ -54,8 +56,8 @@ const Hero = () => {
       </button>
 
     </div>
-    <h1 className="text-center">Bienvenido al Ecomuseo de Títeres Marioeddy</h1>
-    <p className="text-center">Para ser Titiritero vivirás la historia de un viajero...</p>
+    <h1 className="text-center my-3">Bienvenido al Ecomuseo de Títeres Marioeddy</h1>
+    <p className="text-center">Para ser Titiritero vivirás la historia de un viajero, abrirás tu corazón a un ave en vuelo...</p>
 
     </>
 

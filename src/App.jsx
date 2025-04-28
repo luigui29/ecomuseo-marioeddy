@@ -3,6 +3,7 @@ import './App.css'
 import Navbar from './Components/Navbar.jsx'
 import Hero from './Components/Hero.jsx'
 import Mapa from './Components/Mapa.jsx'
+import BigCard from './Components/BigCard.jsx'
 import Card from './Components/Card.jsx'
 import Gallery from './Components/Gallery.jsx'
 
@@ -24,13 +25,6 @@ function App() {
               description="Descubre la magia de los títeres tradicionales en un espacio diseñado para preservar y compartir este arte milenario."
               buttonText="Conoce más"
             />
-          </div>
-        </section>
-        
-        <section className="section bg-light">
-          <div className="container">
-            <h2 className="section-title">Ubicación</h2>
-            <Mapa/>
           </div>
         </section>
         
@@ -60,25 +54,14 @@ function App() {
         {/* Sección Galería */}
         <section className="py-5">
           <div className="container">
-            <h2 className="text-center mb-5">Galería</h2>
             <Gallery/>
           </div>
         </section>
         
         {/* Sección Visitas */}
-        <section className="py-5 bg-light border border-2 mb-5 ms-5 me-5">
-          <div className="container">
-            <h2 className="text-center mb-5">Visítanos</h2>
-            <div className="row">
-              <div className="col-md-6">
-                <h1>Horarios</h1>
-                <p>Martes a Domingo: 9am - 5pm</p>
-                <p>Lunes: Cerrado</p>
-              </div>
-              <div className="col-md-6">
-               <Mapa/>
-              </div>
-            </div>
+        <section className="py-0 bg-light border border-2 mb-5 ms-5 me-5">
+          <div className="container mx-0 px-0 mw-100" style={{height: "20em"}}>
+            <BigCard />
           </div>
         </section>
       </main>
