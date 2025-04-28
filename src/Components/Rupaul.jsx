@@ -1,13 +1,11 @@
-const Rupaul = () => {
-        return(
-                <button>
-                        <div>
-                                <p>
-                                HOLA SOY RUPAUL
-                                </p>
-                        </div>
-                </button>
-        )
-};
+import React from 'react'
 
-export default Rupaul;
+const Rupaul = () => {
+  return (
+    <div>
+      
+    </div>
+  )
+}
+
+export default Rupaul
