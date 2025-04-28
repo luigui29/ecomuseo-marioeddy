@@ -7,7 +7,7 @@ import Card from './Components/Card.jsx'
 import Gallery from './Components/Gallery.jsx'
 
 function App() {
-  const [count, setCount] = useState(0)
+ 
 
   return (
     <div className="App">
@@ -35,21 +35,23 @@ function App() {
         </section>
         
         {/* Sección Sobre Nosotros */}
-        <section className="py-5 bg-light">
+        <section className="py-5 bg-light" id="about">
           <div className="container">
             <h2 className="text-center mb-5">Sobre el Ecomuseo</h2>
-            <div className="row">
+            <div className="row align-items-center">
               <div className="col-md-6">
-                <Card 
-                  title="Nuestra Historia" 
-                  description="Fundado en 2010, preservamos la tradición titiritera de la región con más de 500 piezas históricas."
-                />
+                <div className="about-content pe-md-5">
+                  <h3 className="mb-4">Nuestra Historia</h3>
+                  <p className="lead">Fundado en -----, preservamos la tradición titiritera con más de 500 piezas históricas.</p>
+                  <p>Desde nuestros inicios hemos trabajado para rescatar y difundir este arte tradicional.</p>
+                </div>
               </div>
               <div className="col-md-6">
-                <Card 
-                  title="Misión" 
-                  description="Promover el arte de los títeres como patrimonio cultural vivo a través de exhibiciones y talleres educativos."
-                />
+                <div className="about-content ps-md-5">
+                  <h3 className="mb-4">Misión y Visión</h3>
+                  <p className="lead">Promovemos los títeres como patrimonio cultural vivo.</p>
+                  <p>Buscamos ser referencia internacional en preservación y enseñanza de este arte.</p>
+                </div>
               </div>
             </div>
           </div>
@@ -64,21 +66,17 @@ function App() {
         </section>
         
         {/* Sección Visitas */}
-        <section className="py-5 bg-light">
+        <section className="py-5 bg-light border border-2 mb-5 ms-5 me-5">
           <div className="container">
             <h2 className="text-center mb-5">Visítanos</h2>
             <div className="row">
               <div className="col-md-6">
-                <Card 
-                  title="Horarios" 
-                  description="Martes a Domingo: 9am - 5pm\nLunes: Cerrado"
-                />
+                <h1>Horarios</h1>
+                <p>Martes a Domingo: 9am - 5pm</p>
+                <p>Lunes: Cerrado</p>
               </div>
               <div className="col-md-6">
-                <Card 
-                  title="Ubicación" 
-                  description="Calle Principal #123, Ciudad Guayana\nEntrada general: $5"
-                />
+               <Mapa/>
               </div>
             </div>
           </div>
