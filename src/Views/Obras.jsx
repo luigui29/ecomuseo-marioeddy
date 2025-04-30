@@ -1,10 +1,11 @@
-import Rupaul from '../Components/Rupaul.jsx'
+import React from 'react'
 
+const Obras = () => {
+  return (
+    <div>
+      
+    </div>
+  )
+}
 
-const Obra = () => {
-    return(
-        <Rupaul />
-    )
-};
-
-export default Obra;
+export default Obras
