@@ -34,7 +34,7 @@ function App() {
                 <img 
                   src={decoracion_d} 
                   alt="decoración derecha" 
-                  className="img-fluid ms-3" 
+                  className="img-fluid ms-3"
                   style={{width: "80px"}}
                 />
               </div>
