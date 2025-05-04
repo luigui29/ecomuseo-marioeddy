@@ -6,10 +6,16 @@
   --text: #34495e;
 }
 
+/* Navbar offset */
+html {
+  scroll-padding-top: 80px;
+}
+
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: var(--text);
   line-height: 1.6;
+  padding-top: 80px;
 }
 
 .container {
@@ -51,4 +57,25 @@ body {
 .btn:hover {
   background: #c0392b;
   transform: translateY(-2px);
+}
+
+.divider {
+  width: 80px;
+  height: 3px;
+}
+
+.icon-box {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bg-primary-light {
+  background-color: rgba(var(--bs-primary-rgb), 0.1);
+}
+
+.z-index-1 {
+  z-index: 1;
 }

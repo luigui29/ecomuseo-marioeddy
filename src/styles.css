@@ -53,3 +53,23 @@
   display: inline-block;
   align-self: flex-start;
 }
+.divider {
+  width: 80px;
+  height: 3px;
+}
+
+.icon-box {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bg-primary-light {
+  background-color: rgba(var(--bs-primary-rgb), 0.1);
+}
+
+.z-index-1 {
+  z-index: 1;
+}
