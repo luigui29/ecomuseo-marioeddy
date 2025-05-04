@@ -10,17 +10,16 @@ function App() {
 
   return (
     <div className="App">
-           <Navbar/>
+      <Navbar/>
       <Router>
       <Routes>
         <Route path="/" element={<HomePage/>}/>
         <Route path="/collection" element={<Collection/>}/>
       </Routes>
-   
-        </Router>
-     
+    </Router>
+      
     </div>
-
+      
   )
 }
 

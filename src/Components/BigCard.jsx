@@ -10,11 +10,11 @@ const BigCard = () => {
           <ul className="list-group list-group-flush mb-3">
             <li className="list-group-item bg-transparent d-flex align-items-center">
               <i className="bi bi-clock me-2 text-primary"></i>
-              Martes a Domingo: 9am - 5pm
+              Lunes a Viernes: 8:30am - 4:30pm / Sábado: 8:30am - 1:30pm
             </li>
             <li className="list-group-item bg-transparent d-flex align-items-center">
               <i className="bi bi-x-circle me-2 text-danger"></i>
-              Lunes: Cerrado
+              Domingo: Cerrado
             </li>
           </ul>
           <div className="mt-auto">
