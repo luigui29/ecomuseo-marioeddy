@@ -1,11 +1,12 @@
 import React from 'react'
 
 // Components
-import Navbar from '../Components/sections/Navbar.jsx'
+
 import Hero from '../Components/Hero.jsx'
 import BigCard from '../Components/BigCard.jsx'
 import Card from '../Components/Card.jsx'
 import Gallery from '../Components/Gallery.jsx'
+import Footer from '../Components/sections/Footer.jsx'
 
 // Assets
 import decoracion_i from '../assets/decoraciones/DecoracionIzquierda.png'
@@ -68,7 +69,7 @@ const HomePage = () => {
                       </div>
                       <h3 className="mb-0">Nuestra Historia</h3>
                     </div>
-                    <p className="lead fw-medium">Fundado en 1985, preservamos la tradición titiritera con más de 500 piezas históricas.</p>
+                    <p className="lead fw-medium">Fundado en 2024, preservamos la tradición titiritera con más de 500 piezas históricas.</p>
                     <p className="mb-0">Desde nuestros inicios hemos trabajado incansablemente para rescatar, documentar y difundir este invaluable arte tradicional.</p>
                   </div>
                 </div>
@@ -107,16 +108,7 @@ const HomePage = () => {
         </section>
       </main>
       
-      <footer className="bg-dark text-white py-4">
-        <div className="container text-center">
-          <p>  Ecomuseo de Títeres Marioeddy - Todos los derechos reservados</p>
-          <div className="social-links mt-3">
-            <a href="#" className="text-white mx-2"><i className="bi bi-facebook"></i></a>
-            <a href="#" className="text-white mx-2"><i className="bi bi-instagram"></i></a>
-            <a href="#" className="text-white mx-2"><i className="bi bi-whatsapp"></i></a>
-          </div>
-        </div>
-      </footer>
+     <Footer/>
     </div>
   )
 }
