@@ -5,7 +5,7 @@ const Navbar = () => {
   return (
     <nav className="navbar sticky-top navbar-expand-lg navbar-dark" style={{backgroundColor: "#000000"}}>
       <div className="container">
-        <a className="navbar-brand" href="#">
+        <a className="navbar-brand" href="/">
           <img src={logo} alt="Logo" width="30" className="d-inline-block align-top me-2" />
           Ecomuseo Marioeddy
         </a>
@@ -15,10 +15,10 @@ const Navbar = () => {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
-              <a className="nav-link " href="#">Inicio</a>
+              <a className="nav-link " href="/">Inicio</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">Colección</a>
+              <a className="nav-link" href="/collection">Colección</a>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#">Talleres</a>
