@@ -4,10 +4,10 @@ import logo from '../../assets/logo.png'
 const Navbar = () => {
   return (
     <nav className="navbar sticky-top navbar-expand-lg navbar-dark" style={{backgroundColor: "#000000"}}>
-      <div className="container">
+      <div className="container" style={{position: 'relative'}}>
         <a className="navbar-brand" href="/">
-          <img src={logo} alt="Logo" width="30" className="d-inline-block align-top me-2" />
-          Ecomuseo Marioeddy
+          <img src={logo} alt="Logo" width="80px" className="d-inline-block align-top me-2" style={{position:'absolute', top: '0'}}/>
+          <div style={{marginLeft: '100px', fontFamily:'Amaranta'}}> Ecomuseo Marioeddy </div>
         </a>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
           <span className="navbar-toggler-icon"></span>
