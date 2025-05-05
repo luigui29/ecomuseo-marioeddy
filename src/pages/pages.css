@@ -1,0 +1,19 @@
+/* Background Colors */
+:root {
+  --gcolor-1: rgb(203, 161, 53);
+  --gcolor-2: rgb(150, 75, 0);
+}
+
+.museum-background {
+    background: linear-gradient(to right, var(--gcolor-1), var(--gcolor-2));
+  }
+
+.subtitle-font {
+    font-family: 'Monsieur La Doulaise';
+    color: white;
+    font-size: 80px;
+}
+
+.caption-font {
+    font-family: 'Amarante';
+}

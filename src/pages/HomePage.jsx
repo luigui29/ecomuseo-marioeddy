@@ -11,9 +11,12 @@ import Footer from '../Components/sections/Footer.jsx'
 // Assets
 import decoracion_i from '../assets/decoraciones/DecoracionIzquierda.png'
 import decoracion_d from '../assets/decoraciones/DecoracionDerecha.png'
+import titere_1 from '../assets/titeres-1.png'
+import titere_2 from '../assets/titeres-2.png'
+
 const HomePage = () => {
   return (
-    <div>
+    <div className="museum-background">
       <main>
        
         <Hero/>
@@ -21,19 +24,19 @@ const HomePage = () => {
         <section className="section py-5">
           <div className="container">
             <div className="row justify-content-center mb-5">
-              <div className="col-auto d-flex align-items-center">
+              <div className="col-auto d-flex align-items-center" style={{position: "relative"}}>
                 <img 
                   src={decoracion_i} 
                   alt="decoración izquierda" 
                   className="img-fluid me-3" 
-                  style={{width: "80px"}}
+                  style={{width: "400px", position: "absolute", right: "500px", bottom: "-50px"}}
                 />
-                <h2 className="section-title mb-0 text-center">Nuestro Museo</h2>
+                <h2 className="section-title subtitle-font mb-0 text-center"><b>Nuestro Museo</b></h2>
                 <img 
                   src={decoracion_d} 
                   alt="decoración derecha" 
                   className="img-fluid ms-3" 
-                  style={{width: "80px"}}
+                  style={{width: "400px", position: "absolute", left: "500px", bottom: "-50px"}}
                 />
               </div>
             </div>
@@ -52,7 +55,7 @@ const HomePage = () => {
         </section>
         
         {/* Sección Sobre Nosotros */}
-        <section className="py-5 bg-light position-relative" id="about">
+        <section className="py-5 bg-light position-relative" id="about" style={{marginBottom: "100px"}}>
           <div className="container position-relative z-index-1">
             <div className="text-center mb-5">
               <h2 className="display-5 fw-bold text-primary mb-3">Sobre el Ecomuseo</h2>
@@ -92,20 +95,32 @@ const HomePage = () => {
             </div>
           </div>
         </section>
+
+        {/* Titeres Decorativos */}
+        <div style={{position: "relative", width: "100%"}}>
+          <img src={titere_1} alt="titeres" style={{position: "absolute", bottom: "-50px", left: "-200px", zIndex: "2"}}/>
+          <div className='subtitle-font' style={{textAlign: "center", paddingBottom: "50px", fontSize: "150px"}}> <b>Visítanos!</b> </div>
+          <img src={titere_2} alt="titeres" style={{position: "absolute", bottom: "-80px", right: "-50px", zIndex: "2"}}/>
+        </div>
         
-        {/* Sección Galería */}
+        {/* 
+        Sección Galería 
         <section className="py-5">
           <div className="container">
             <Gallery/>
           </div>
         </section>
-        
+        */} 
+
         {/* Sección Visitas */}
-        <section className="py-0 bg-light border border-2 mb-5 ms-5 me-5">
-          <div className="container mx-0 px-0 mw-100" style={{height: "25em"}}>
-            <BigCard/>
-          </div>
-        </section>
+        <div style={{backgroundColor: "rgb(89, 38, 11)", padding: "50px 0px 50px 0px", position: "relative", zIndex: "9"}}>
+          <section className="py-0 bg-light border border-2 mb-5 ms-5 me-5">
+            <div className="container mx-0 px-0 mw-100" style={{height: "25em"}}>
+              <BigCard/>
+            </div>
+          </section>
+        </div>
+        
       </main>
       
      <Footer/>

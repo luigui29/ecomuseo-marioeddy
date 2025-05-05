@@ -3,7 +3,7 @@ import React from 'react'
 const Footer = () => {
   return (
     <div>
-       <footer className="bg-dark text-white py-4">
+       <footer className="text-white py-4" style={{backgroundColor: "rgb(89, 38, 11)"}}>
         <div className="container text-center">
           <p>  Ecomuseo de Títeres Marioeddy - Todos los derechos reservados</p>
           <div className="social-links mt-3">

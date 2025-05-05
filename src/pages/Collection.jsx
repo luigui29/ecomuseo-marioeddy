@@ -1,6 +1,7 @@
 import React from 'react'
 import Card from '../Components/Card.jsx'
 import img from '../assets/ecomuseo-carousel-2.jpg'
+
 const Collection = () => {
   return (
     <div className='container mt-5 mb-5 mx-5 me-5'>
