@@ -6,6 +6,7 @@ import Collection from './pages/Collection.jsx'
 import Talleres from './pages/Talleres.jsx'
 import Visitas from './pages/Visitas.jsx'
 import Contacto from './pages/Contacto.jsx'
+import { Obras } from './pages/Obras.jsx'
 
 function App() {
  
@@ -20,6 +21,7 @@ function App() {
         <Route path='/talleres' element={<Talleres/>}/>
         <Route path='/visitas' element={<Visitas/>}/>
         <Route path='/contacto' element={<Contacto/>}/>
+        <Route path='/Obras' element={<Obras/>}/>
       </Routes>
     </Router>
       
