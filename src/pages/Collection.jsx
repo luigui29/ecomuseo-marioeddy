@@ -1,23 +1,21 @@
 import React from 'react'
-import Card from '../Components/Card.jsx'
 
-//Titeres
-
-import dragonflojo_img from '../assets/dragondienteflojo-img1.jpg'
-import avolarpapagayo_img from '../assets/avolarpapagayo-img1.jpg'
-import meloencontreprim_img from '../assets/meloencontreprimero-img1.jpg'
+//Assets
+import cortinas from '../assets/decoraciones/curtains.png'
 
 const Collection = () => {
   return (
-    <main className='museum-background'>
-      <div className='container mx-5 me-5'>
-        <h2 className='text-center mb-5'>Colección</h2>
-        <Card title="Card title " description="Some quick example text to build on the card title and make up the bulk of the card's content."/>
-        <img src={dragonflojo_img} alt="" className='img-fluid mb-5 w-50 mx-auto'/>
-        <Card title="Card title" description="Some quick example text to build on the card title and make up the bulk of the card's content."/>
-        <img src={avolarpapagayo_img} alt="" className='img-fluid mb-5 w-50 mx-auto'/>
-        <Card title="Card title" description="Some quick example text to build on the card title and make up the bulk of the card's content."/>
-        <img src={meloencontreprim_img} alt="" className='img-fluid mb-5 w-50 mx-auto'/>
+    <main className='museum-background' style={{height: "inherit"}}>
+      {/* Header y Cortinas */}
+      <div className='position-relative museum-background' style={{height: "inherit"}}>
+        <img src={cortinas} alt="cortinas" className='position-absolute' style={{width: "100%"}}/>
+        <h2 className='position-absolute subtitle-font' style={{marginTop: "15%", marginLeft: "16%", fontSize: "10vw", lineHeight: "1"}}>Colección</h2>        
+      </div>
+      { /* Ir a Colección */}
+      <div className="position-relative">
+        <div className='position-absolute'></div>
+        <div className='position-absolute'></div>
+        <div className='position-absolute'></div>
       </div>
     </main>
   )
