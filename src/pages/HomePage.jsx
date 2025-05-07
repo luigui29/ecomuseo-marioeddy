@@ -18,25 +18,23 @@ const HomePage = () => {
   return (
     <div className="museum-background">
       <main>
-       
         <Hero/>
-        
         <section className="section py-5">
           <div className="container">
             <div className="row justify-content-center mb-5">
-              <div className="col-auto d-flex align-items-center" style={{position: "relative"}}>
+              <div className="col-auto d-flex align-items-center position-relative">
                 <img 
                   src={decoracion_i} 
                   alt="decoración izquierda" 
-                  className="img-fluid me-3" 
-                  style={{width: "400px", position: "absolute", right: "500px", bottom: "-50px"}}
+                  className="img-fluid me-3 decoracion-titulo" 
+                  id="decoracion-izquierda"
                 />
-                <h2 className="section-title subtitle-font mb-0 text-center"><b>Nuestro Museo</b></h2>
+                <h2 className="section-title subtitle-font mb-0 text-center position-relative homepage-titulo"><b>Nuestro EcoMuseo</b></h2>
                 <img 
                   src={decoracion_d} 
                   alt="decoración derecha" 
-                  className="img-fluid ms-3" 
-                  style={{width: "400px", position: "absolute", left: "500px", bottom: "-50px"}}
+                  className="img-fluid ms-3 decoracion-titulo" 
+                  id="decoracion-derecha"
                 />
               </div>
             </div>
@@ -97,23 +95,14 @@ const HomePage = () => {
         </section>
 
         {/* Titeres Decorativos */}
-        <div style={{position: "relative", width: "100%"}}>
-          <img src={titere_1} alt="titeres" style={{position: "absolute", bottom: "-50px", left: "-200px", zIndex: "2"}}/>
-          <div className='subtitle-font' style={{textAlign: "center", paddingBottom: "50px", fontSize: "150px"}}> <b>Visítanos!</b> </div>
-          <img src={titere_2} alt="titeres" style={{position: "absolute", bottom: "-80px", right: "-50px", zIndex: "2"}}/>
+        <div className='visitanos-div'>
+          <img src={titere_1} alt="titeres" id="visitanos-titere-1"/>
+          <div className='subtitle-font visitanos-text'> <b>Visítanos!</b> </div>
+          <img src={titere_2} alt="titeres" id="visitanos-titere-2"/>
         </div>
-        
-        {/* 
-        Sección Galería 
-        <section className="py-5">
-          <div className="container">
-            <Gallery/>
-          </div>
-        </section>
-        */} 
 
-        {/* Sección Visitas */}
-        <div style={{backgroundColor: "rgb(89, 38, 11)", padding: "50px 0px 50px 0px", position: "relative", zIndex: "9"}}>
+        {/* Sección Ubicación */}
+        <div className='ubicacion-div'>
           <section className="py-0 bg-light border border-2 mb-5 ms-5 me-5">
             <div className="container mx-0 px-0 mw-100" style={{height: "25em"}}>
               <BigCard/>

@@ -6,7 +6,7 @@ import './Hero.css';
 
 const Hero = () => {
   return (
-    <div className="hero-section">
+    <div className="hero-section mt-5">
       <div id="mainCarousel" className="carousel slide" data-bs-ride="carousel">
         <div className="carousel-indicators">
           <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
@@ -46,7 +46,7 @@ const Hero = () => {
             </div>
             <div className="hero-content animate__animated animate__fadeIn">
               <h2 className="hero-title">Talleres Educativos</h2>
-              <p className="hero-subtitle">Aprende sobre el arte y el mundo con nuestros maestros</p>
+              <p className="hero-subtitle">Aprende sobre el arte en el mundo con nuestros maestros</p>
               <button className="hero-button">Conoce más</button>
             </div>
           </div>
