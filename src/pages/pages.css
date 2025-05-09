@@ -92,3 +92,53 @@
     right: -50px; 
    }
 }
+
+/* Collection Page */
+
+.collection-title { 
+  line-height: 1;
+  font-size: 16vw;
+  left: 24%;
+  text-shadow: 1px 0 5px var(--gcolor-5);
+}
+
+.collection-links {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+@media (min-width: 993px) {
+  .collection-title {
+    margin-top: 180px;
+  }
+}
+
+@media (max-width: 992px) {
+  .collection-title {
+    margin-top: 155px;
+  }
+}
+
+@media (max-width: 767px) {
+  .collection-title {
+    margin-top: 130px;
+  }
+}
+
+@media (max-width: 575px) {
+  .collection-title {
+    margin-top: 110px;
+  }
+}
+
+/* Autores - Obras - Títeres */
+.collection-item-container {
+  background-color: var(--gcolor-6);
+  margin-top: 50px;
+}
+
+.collection-item-container:nth-child(1) {
+  margin-top: 70px;
+}

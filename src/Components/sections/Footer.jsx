@@ -3,7 +3,7 @@ import React from 'react'
 const Footer = () => {
   return (
     <div>
-      <footer className="text-white py-4">
+      <footer className="text-white py-4 position-relative" style={{zIndex: "99"}}>
         <div className="container text-center">
           <p>  Ecomuseo de Títeres Marioeddy - Todos los derechos reservados</p>
           <div className="social-links mt-3">
