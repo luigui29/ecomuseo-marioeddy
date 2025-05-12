@@ -4,10 +4,9 @@ import Navbar from './Components/sections/Navbar.jsx'
 import HomePage from './pages/HomePage.jsx'
 import Collection from './pages/Collection.jsx'
 import Talleres from './pages/Talleres.jsx'
+import Visitas from './pages/Visitas.jsx'
 import Contacto from './pages/Contacto.jsx'
-import Autores from './pages/paginas_colleccion/Autores.jsx'
-import Obras from './pages/paginas_colleccion/Obras.jsx'
-import Titeres from './pages/paginas_colleccion/Titeres.jsx'
+import { Obras } from './pages/Obras.jsx'
 
 function App() {
  
@@ -20,10 +19,9 @@ function App() {
         <Route path="/" element={<HomePage/>}/>
         <Route path="/collection" element={<Collection/>}/>
         <Route path='/talleres' element={<Talleres/>}/>
+        <Route path='/visitas' element={<Visitas/>}/>
         <Route path='/contacto' element={<Contacto/>}/>
-        <Route path='/autores' element={<Autores/>}/>
-        <Route path='/obras' element={<Obras/>}/>
-        <Route path='/titeres' element={<Titeres/>}/>
+        <Route path='/Obras' element={<Obras/>}/>
       </Routes>
     </Router>
       

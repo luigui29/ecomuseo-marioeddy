@@ -23,10 +23,4 @@ ul.navbar-nav.ms-auto {
   }
 }
 
-@media (max-width: 400px) {
-  .navbar-brand {
-    font-size: 13px;
-  }
-}
-
 footer { background-color: rgb(89, 38, 11);}

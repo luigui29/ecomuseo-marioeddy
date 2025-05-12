@@ -17,7 +17,7 @@ const BigCard = () => {
               Domingo: Cerrado
             </li>
           </ul>
-          <div style={{marginTop: "70px"}}>
+          <div className="mt-auto">
             <h5 className="text-muted">Dirección</h5>
             <p className="mb-0">
               <i className="bi bi-geo-alt-fill me-2 text-primary"></i>

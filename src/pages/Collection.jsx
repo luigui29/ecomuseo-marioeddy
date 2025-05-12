@@ -2,12 +2,8 @@ import React, { useEffect, useState } from 'react'
 import InteractiveButton from '../Components/InteractiveButton.jsx'
 import '../styles/Collection.css'
 
-//Componentes
-import Footer from '../Components/sections/Footer.jsx'
-
 //Assets
 import cortinas from '../assets/decoraciones/curtains.png'
-import titiriteros from '../assets/titiriteros-1.png'
 
 const Collection = () => {
   const [loaded, setLoaded] = useState(false)
@@ -18,49 +14,19 @@ const Collection = () => {
   }, [])
 
   return (
-    <div className='museum-background collection-container'>
-      <main className='h-100'>
-        {/* Header y Cortinas */}
-        <div className='collection-header'>
-          <img 
-            src={cortinas} 
-            alt="cortinas" 
-            className='collection-curtain'
-          />
-          <h2 className={`collection-title ${loaded ? 'fade-in' : ''}`}>Colección</h2>      
-        </div>
-        
-        {/* Navegación */}
-        <div className="collection-navigation">
-          <div className="row g-0">
-            <div className={`col-4 text-center collection-link-item ${loaded ? 'slide-up' : ''}`} style={{animationDelay: '0.2s'}}>
-              <InteractiveButton 
-                href="/autores" 
-                className="mb-4"
-              >
-                autores
-              </InteractiveButton>
-              <div className="collection-image-container">
-                <img src={titiriteros} alt="titiriteros" className='collection-image'/>
-              </div>
-            </div>
-            <div className={`col-4 text-center collection-link-item ${loaded ? 'slide-up' : ''}`} style={{animationDelay: '0.4s'}}>
-              <InteractiveButton href="/obras">
-                obras
-              </InteractiveButton>
-            </div>
-            <div className={`col-4 text-center collection-link-item ${loaded ? 'slide-up' : ''}`} style={{animationDelay: '0.6s'}}>
-              <InteractiveButton href="/titeres">
-                títeres
-              </InteractiveButton>
-            </div>
-          </div>
-        </div>
-      </main>
-      <div className="collection-footer">
-        <Footer />
+    <main className='museum-background' style={{height: "inherit"}}>
+      {/* Header y Cortinas */}
+      <div className='position-relative museum-background' style={{height: "inherit"}}>
+        <img src={cortinas} alt="cortinas" className='position-absolute' style={{width: "100%"}}/>
+        <h2 className='position-absolute subtitle-font' style={{marginTop: "15%", marginLeft: "16%", fontSize: "10vw", lineHeight: "1"}}>Colección</h2>        
       </div>
-    </div>
+      { /* Ir a Colección */}
+      <div className="position-relative">
+        <div className='position-absolute'></div>
+        <div className='position-absolute'></div>
+        <div className='position-absolute'></div>
+      </div>
+    </main>
   )
 }
 
